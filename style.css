@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+}
+:root {
+  --clr-Cyan: hsl(179, 62%, 43%);
+  --clr-light-cyan: hsla(179, 62%, 43%, 0.5);
+  --clr-Bright-Yellow: hsl(71, 73%, 54%);
+  --clr-Light-Gray: hsl(204, 43%, 93%);
+  --clr-Grayish-Blue: hsl(218, 22%, 67%);
+  --clr-White: rgb(255, 255, 255);
+
+  --radius: 10px;
+}
+body {
+  font-family: "Karla", sans-serif;
+  background-color: var(--clr-Light-Gray);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  width: 50rem;
+  display: grid;
+  grid-template-areas:
+    "one      one"
+    "two    three";
+  padding: 20px 30px;
+  box-shadow: 0px 10px 10px -6px;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+.card-one {
+  grid-area: one;
+  background-color: var(--clr-White);
+  padding: 2rem;
+}
+.card-one h2 {
+  color: var(--clr-Cyan);
+  font-size: 1.5rem;
+  margin-bottom: 1.2rem;
+}
+.first {
+  color: var(--clr-Bright-Yellow);
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+.last {
+  color: var(--clr-Grayish-Blue);
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+.card-two {
+  grid-area: two;
+  background-color: var(--clr-Cyan);
+  padding: 1.5rem;
+}
+.card-two h2 {
+  color: var(--clr-White);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.doll {
+  color: var(--clr-White);
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+.card-two span {
+  font-size: 0.8rem;
+  color: var(--clr-Light-Gray);
+  font-weight: 400;
+}
+.full {
+  font-size: 1.3rem;
+  color: var(--clr-White);
+  margin-bottom: 0.8rem;
+}
+button {
+  border-radius: 8px;
+  padding: 5px 100px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--clr-White);
+  background-color: var(--clr-Bright-Yellow);
+  border-color: var(--clr-Cyan);
+  box-shadow: 1px 1px 1px 1px var(--clr-Cyan);
+}
+.card-three {
+  grid-area: three;
+  background-color: var(--clr-light-cyan);
+  padding: 1.5rem;
+}
+.card-three h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--clr-White);
+}
+.features {
+  color: var(--clr-White);
+  list-style: none;
+  font-size: 1.2rem;
+}
+.items {
+  list-style: none;
+}
+@media screen and (max-width: 424px) {
+  .box {
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0px;
+    margin-top: 235px;
+  }
+  button {
+    padding: 5px 40px;
+  }
+}
